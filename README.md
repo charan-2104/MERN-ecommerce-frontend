@@ -1,30 +1,65 @@
-# React + TypeScript + Vite
+# MERN E-Commerce Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the frontend for a MERN stack E-commerce application. The frontend is built using React, Redux, and TypeScript. It interacts with the backend to provide a seamless user experience.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React**
+- **Redux**
+- **TypeScript**
+- **Tailwind CSS**
+- **Firebase**
+- **Stripe**
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- User authentication and authorization
+- Product catalog and details
+- Shopping cart management
+- Order management
+- Payment processing with Stripe
+- Responsive design
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### Prerequisites
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Node.js
+- Firebase account
+- Stripe account
+
+### Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/charan-2104/MERN-ecommerce-frontend.git
+   cd MERN-ecommerce-frontend
+
+   
+2. Install dependencies:
+     `npm install`
+   
+
+4. Create a `.env` file in the root directory and add the following environment variables:
+
+	VITE_FIREBASE_KEY=  `from firebase`
+
+	VITE_AUTH_DOMAIN=  `from firebase`
+
+	VITE_PROJECT_ID=`from firebase`
+
+	VITE_STORAGE_BUCKET=`from firebase`
+
+	VITE_MESSAGING_SENDER_ID=`from firebase`
+
+	VITE_APP_ID=`from firebase`
+
+	VITE_SERVER=`Your Backend Server URl`
+
+   VITE_STRIPE_KEY=`Stripe Publishable Key`
+   
+  
+
+5.	Run the server:
+
+		`npm run dev`
